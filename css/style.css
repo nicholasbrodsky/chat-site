@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 900px;
+    margin: auto;
+}
+
+#start_form {
+    height: 350px;
+    width: 600px;
+    background-color: #DDD;
+    position: fixed;
+    margin: 200px 150px;
+    z-index: 1;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+#start_form h2 {
+    text-align: center;
+}
+
+#start_form .active {
+    color: #2b28cc;
+    font-weight: 600;
+}
+
+#login,
+#register {
+    cursor: pointer;
+}
+
+#sign_in_form {
+    padding: 20px;
+}
+
+#sign_in_form input {
+    margin: 5px;
+}
+
+#sign_in_form button {
+    margin: 5px;
+    width: 47%;
+}
+
+#sign_up_form {
+    padding: 20px;
+}
+
+#sign_up_form input {
+    margin: 5px;
+}
+
+#sign_up_form button {
+    margin: 5px;
+    width: 47%;
+}
+
+#login_error {
+    color: #ff0000;
+    text-align: center;
+    display: none;
+}
+
+#multiple_logins {
+    color: #ff0000;
+    text-align: center;
+    display: none;
+}
+
+#register_error {
+    color: #ff0000;
+    text-align: center;
+    display: none;
+}
+
+
+/* .error-input {} */
+
+header {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #CCC;
+    border-radius: 10px 10px 0 0;
+    opacity: 0.4;
+    position: relative
+}
+
+#username {
+    font-size: 14px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #CCC;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    padding: 6px;
+    opacity: 0.4;
+}
+
+section {
+    height: 720px;
+    position: relative;
+    opacity: 0.4;
+}
+
+section h3 {
+    text-align: center;
+    background-color: rgb(100, 149, 237);
+    padding: 12px;
+    margin-top: 0;
+}
+
+#side_panel {
+    height: 720px;
+    width: 300px;
+    position: absolute;
+    border-left: 5px solid #CCC;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.friends li {
+    cursor: pointer;
+    margin: 0 10px;
+    width: fit-content;
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+.friends span.unread {
+    background-color: #F00;
+    color: #FFF;
+    padding: 2px 6px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.friends li.online {
+    font-weight: 700;
+}
+
+.friends li.offline {
+    font-style: italic;
+}
+
+#friends_menu {
+    position: absolute;
+    bottom: 0px;
+    height: 48px;
+    width: 100%;
+    padding: 6px 30px;
+    border-top: 5px solid #CCC;
+}
+
+#friends_menu span {
+    font-size: 2em;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#add_friend_menu {
+    position: absolute;
+    bottom: 48px;
+    display: none;
+}
+
+#add_friend_menu input[type=text] {
+    padding: 16px;
+}
+
+.add_error {
+    border: 1px solid #F00;
+}
+
+#delete_friend_menu {
+    position: absolute;
+    bottom: 48px;
+    display: none;
+}
+
+#delete_friend_menu input[type=text] {
+    padding: 16px;
+}
+
+.delete_error {
+    border: 1px solid #F00;
+}
+
+#main {
+    height: 720px;
+    width: 600px;
+    position: absolute;
+    margin-left: 300px;
+    border-left: 5px solid #CCC;
+    border-right: 5px solid #CCC;
+}
+
+#body {
+    position: relative;
+    display: none;
+}
+
+.messages {
+    height: 614px;
+    overflow-y: auto;
+}
+
+
+/* #input {} */
+
+input[type=text] {
+    padding: 22px;
+    padding-left: 10px;
+}
+
+.sent-msg {
+    background-color: #AEE5FF;
+    /*width: max-content;*/
+    max-width: 360px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    margin-left: 210px;
+    border: 0.5px solid #000;
+}
+
+.send-time {
+    margin-top: -30px;
+    font-size: 11px;
+    width: max-content;
+    position: absolute;
+    right: 385px;
+}
+
+.recv-msg {
+    background-color: #EEE;
+    max-width: 360px;
+    padding: 15px;
+    margin: 10px;
+    margin-right: 210px;
+    border-radius: 10px;
+    border: 0.5px solid #000;
+}
+
+.recv-time {
+    margin-top: -30px;
+    font-size: 11px;
+    width: max-content;
+    position: absolute;
+    left: 375px;
+}
