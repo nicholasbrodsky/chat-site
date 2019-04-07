@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    /* height: 600px; */
+    margin: auto;
+}
+
+#start_form {
+    background-color: #DDD;
+    position: fixed;
+    z-index: 1;
+    width: 98%;
+    height: 60%;
+    margin: auto;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+section {
+    height: 520px;
+    position: relative;
+    opacity: 0.4;
+}
+
+#side_panel {
+    height: 520px;
+    width: 460px;
+    position: absolute;
+    z-index: 1;
+    border-left: 5px solid #CCC;
+    border-right: 5px solid #CCC;
+}
+
+#main {
+    height: 520px;
+    width: 460px;
+    position: absolute;
+    z-index: 0;
+    margin: 0;
+    border-left: 5px solid #CCC;
+    border-right: 5px solid #CCC;
+    background-color: #FFF;
+}
+
+.messages {
+    height: 418px;
+    overflow-y: auto;
+}
+
+.sent-msg {
+    background-color: #AEE5FF;
+    /*width: max-content;*/
+    max-width: 360px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    margin-left: 150px;
+    border: 0.5px solid #000;
+}
+
+.send-time {
+    margin-top: -30px;
+    font-size: 11px;
+    width: max-content;
+    position: relative;
+    left: 110px;
+}
+
+.recv-msg {
+    background-color: #EEE;
+    max-width: 360px;
+    padding: 15px;
+    margin: 10px;
+    margin-right: 150px;
+    border-radius: 10px;
+    border: 0.5px solid #000;
+}
+
+.recv-time {
+    margin-top: -30px;
+    font-size: 11px;
+    width: max-content;
+    position: relative;
+    left: 305px;
+}

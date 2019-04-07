@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Chat</title>
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" media="screen and (max-width: 480px)" href="css/phone-style.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="start_form">
+        <h2><span id="login" class="active">Sign In</span> / <span id="register">Register</span></h2>
+        <div id="sign_in_form">
+            <form>
+                <input class="form-control" type="text" name="username" placeholder="Username" />
+                <input class="form-control" type="text" name="password" placeholder="Password" />
+                <div style="margin-left: 20px;">
+                    <button id="sign_in" class="btn btn-lg btn-primary" type="submit">Sign In</button>
+                    <button class="btn btn-lg btn-danger">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div id="sign_up_form" style="display: none;">
+            <form>
+                <input class="form-control" type="text" name="first_name" placeholder="First Name" />
+                <input class="form-control" type="text" name="last_name" placeholder="Last Name" />
+                <input class="form-control" type="text" name="email" placeholder="Email" />
+                <input class="form-control" type="text" name="username" placeholder="Username" />
+                <input class="form-control" type="text" name="password" placeholder="Password" />
+                <div style="margin-left: 20px;">
+                    <button id="sign_up" class="btn btn-lg btn-primary" type="submit">Sign Up</button>
+                    <button class="btn btn-lg btn-danger">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div id="login_error">
+            <h3>Username/Password combination incorrect</h3>
+        </div>
+        <div id="multiple_logins">
+            <h3>User is already logged in</h3>
+        </div>
+        <div id="register_error">
+            <h3>Invalid form. Try again</h3>
+        </div>
+    </div>
+    <header>
+        <h1>Online Chat</h1>
+        <span id="username"></span>
+    </header>
+    <section>
+        <div id="side_panel">
+            <h3>Friends</h3>
+            <ul class="friends">
+            </ul>
+            <ul class="friends-offline">
+            </ul>
+            <div id="add_friend_menu">
+                <div class="input-group">
+                    <input id="add_friend_input" class="form-control" type="text" placeholder="Enter username to add" />
+                    <span class='input-group-btn'>
+                        <button id='add_friend' class='btn btn-primary'>Add</button>
+                    </span>
+                </div>
+            </div>
+            <div id="delete_friend_menu">
+                <div class="input-group">
+                    <input id="delete_friend_input" class="form-control" type="text" placeholder="Enter username to remove" />
+                    <span class="input-group-btn">
+                        <button id="delete_friend" class="btn btn-primary">Delete</button>
+                    </span>
+                </div>
+            </div>
+            <div id="friends_menu">
+                <span id="add_friend_btn" class="glyphicon glyphicon-plus" title="Add Friend"></span>
+                <span id="delete_friend_btn" class="glyphicon glyphicon-minus" title="Delete Friend"></span>
+            </div>
+        </div>
+        <div id="main">
+            <h3>Messages</h3>
+            <div id="body">
+                <div id="messageBox">
+
+                </div>
+                <div id='input' class='input-group'>
+                    <input id='msg' class='form-control' type='text' name='message' placeholder='Enter message...' />
+                    <span class='input-group-btn'>
+                        <button id='send' class='btn btn-lg btn-primary'>Send</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h1>footer</h1>
+    </footer>
+</body>
+
+</html>
